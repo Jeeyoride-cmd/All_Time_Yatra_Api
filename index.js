@@ -120,4 +120,12 @@ app.use("/api", notificationRoutes);
 app.use("/api", driverUserRoutes);
 app.use("/api", driverBookingRoutes);
 
+app.get("/", (req, res) => {
+  res.json({
+    status: "ok",
+    message: "🚀 All-Time Yatra API is running",
+    docs: "/api",
+  });
+});
+
 module.exports = app;
