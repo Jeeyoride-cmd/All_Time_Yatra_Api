@@ -120,6 +120,4 @@ app.use("/api", notificationRoutes);
 app.use("/api", driverUserRoutes);
 app.use("/api", driverBookingRoutes);
 
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
-});
+module.exports = app;
